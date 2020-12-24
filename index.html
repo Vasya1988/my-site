@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- My css style -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Шрифт иконок -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/2c39379413.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="container-fluid head-black-line">
+        <div class="container-xl">
+            <div class="row align-items-center justify-content-between header p-0">
+                <div class="col-sm-3 col-md-4 p-0">
+                    <p>Welcome to my site!</p>
+                </div>
+                <!-- Всплывающее окно -->
+                <div class="col-sm-6 col-md-5 d-none d-sm-flex justify-content-center align-items-center" id="my_contacts__active">
+                    <p class="d-none d-sm-none">phone: +79266597086   mail: myhappy1988@gmail.com</p>
+                </div>
+                <div class="d-none d-sm-block col-sm-3 col-md-3" id="my_contacts"><a href="">My contacts</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // Header -->
+
+    <!-- nav bar -->
+    <div class="container-xl my-4">
+        <div class="row nav-menu d-flex align-items-end justify-content-around">
+            
+            <div class="col-8 col-sm-4 col-md-4 nav-menu__left">
+                <p>Romanov, Vasily</p>
+            </div>
+
+            <div class="col-6 col-sm-8 col-md-8 d-none d-sm-block nav-menu__right">
+                <div class="row d-flex" data-nav-bar>
+                    <div class="col p-0" data-about="About me"><a href="">
+                        About me
+                    </a></div>
+                    <div class="col p-0" data-js="javascript"><a href="">
+                        JavaScript
+                    </a></div>
+                    <div class="col p-0" data-animation="3d animation"><a href="">
+                        3d Animation
+                    </a></div>
+                    <div class="col p-0" data-modeling="3d modeling"><a href="">
+                        3d Modeling
+                    </a></div>
+                    <div class="col p-0 active_a" data-ps="photoshop"><a href="">
+                        Photoshop
+                    </a></div>
+                </div>
+            </div>
+
+            <div class="col-6"></div>
+        </div>
+    </div>
+    <!-- // nav bar -->
+
+    <!-- nav bar mobile -->
+        <div class="d-sm-none container nav-mobile">
+            <div class="row align-items-center justify-content-around nav-mobile__row" data-nav-bar>
+                <div class="col" data-about>
+                    <a class="d-block" href="" data-mobiletab="about me">
+                        <img class="nav-mobile__img" src="images/icons/user_2.svg" alt="">
+                    </a>
+                </div>
+                <div class="col" data-js>
+                    <a class="d-block" href="
+                    " data-mobiletab="javascript"><img class="nav-mobile__img" src="images/icons/js_icon.svg" alt="">
+                </a>
+                </div>
+                <div class="col" data-animation>
+                    <a class="d-block" href="" data-mobiletab="3d animation"><img class="nav-mobile__img" src="images/icons/3d_animation.svg" alt="">
+                    </a>
+                </div>
+                <div class="col" data-modeling>
+                    <a class="d-block" href="" data-mobiletab="3d modeling"><img class="nav-mobile__img" src="images/icons/3d_modeling.svg" alt="">
+                    </a>
+                </div>
+                <div class="col" data-ps>
+                    <a class="d-block" href="" data-mobiletab="photoshop"><img class="nav-mobile__img" src="images/icons/ps_icon.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    <!-- // nav bar mobile -->
+
+    <!-- App frame -->
+    <div class="container-xl app">
+        <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-sm-3 d-none d-sm-block">
+                <img src="images/myPhoto.jpg" id="myPhoto" alt="">
+            </div>
+
+            <!-- Photoshop page -->
+            <div data-page="photoshop" class="col-sm-9 photoshop-frame">
+                <div class="row d-flex align-items-center justify-content-between">
+                    <a href="#" class="col-2 order-2 order-sm-1 col-sm-1 p-sm-2 p-0 btn_left">
+                        <img src="images/icons/icon_back_grey.svg" alt="">
+                    </a>
+                    <div class="col-12 order-1 px-2 px-sm-3 order-sm-2 col-sm-10" id="photoshop-frame__pic">
+                        <img src="" id="photoshop-frame__pic__img" alt="">
+                    </div>
+                    <a href="#" class="col-2 order-3 py-2 order-sm-3 col-sm-1 p-sm-2 p-0 btn_right">
+                        <img src="images/icons/icon_forward_grey.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- // Photoshop page -->
+
+            <!-- My info page -->
+            <div data-page="about me" class="d-none col-sm-9 myInfo px-5">
+                <p>
+                    First name: <span>Vasily</span> <br>
+                    Last name: <span>Romanov</span> <br>
+                    Birthday: <span>14 March 1988</span> <br>
+                    Age: <span>32</span> <br>
+                    Country: <span>Russia</span> <br>
+                    Skills: <span>Photshop, Illustrator, Autodesk Maya, HTML, CSS, JavaScript</span>
+                </p>
+            </div>
+            <!-- // My info page -->
+
+            <!-- JavaScript -->
+                <div data-page="javascript" class="d-none col-sm-9 js_page justify-content-center align-items-center">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <h1 class="m-0">Страница в разработке...</h1>
+                 </div>
+                </div>
+            <!-- // JavaScript -->
+
+             <!-- 3d animation -->
+             <div data-page="3d animation" class="d-none col-sm-9 anim_page">
+                 <div class="row d-flex justify-content-center align-items-center">
+                     <h1 class="m-0">И эта, тоже, в разработке :)</h1>
+                 </div>
+                
+            </div>
+        <!-- // 3d animation -->
+
+        <!-- 3d modeling -->
+        <div data-page="3d modeling" class="d-none col-sm-9 photoshop-frame">
+            <div class="row d-flex align-items-center justify-content-between">
+                <a href="#" class="col-2 order-2 order-sm-1 col-sm-1 p-sm-2 p-0 btn_left">
+                    <img src="images/icons/icon_back_grey.svg" alt="">
+                </a>
+                <div class="col-12 order-1 px-2 px-sm-3 order-sm-2 col-sm-10" id="modeling-frame__pic">
+                    <img src="" id="modeling-frame__pic__img" alt="">
+                </div>
+                <a href="#" class="col-2 order-3 py-2 order-sm-3 col-sm-1 p-sm-2 p-0 btn_right">
+                    <img src="images/icons/icon_forward_grey.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- // 3d modeling -->
+            
+        </div>
+    </div>
+    <!-- // App frame -->
+    
+    <div class="lightbox"></div>
+    
+    <!-- Info text -->
+    <div class="container-xl py-4 my_Text">
+        <div class="row m-0">
+            <p>
+                Привет! <br> Предлагаю посмотреть мои работы в 2d графике, 3d анимации и во frontend. <br> <br>Когда-то давно, лет 10 назад я увлекся 2d графикой, а именно matte painting очень впечатлили работы в жанре постапокалипсиса. Тогда я начал изучать фотошоп, пошел на курсы в центр Специалист. Потом еще и на adobe illustrator туда же пошел учиться. Так я и начал заниматься ретушью фотографий, мэтпейнтингом, баннерами, мелкой полиграфией. Это стало моей работой. <br>
+                <br>
+    
+                Примерно в 2014 году, на бехансе, случайно увидел 3d работы по скульптингу персонажей и подумал, что ведь это круче 2d тут можно один раз слепить и потом крутить-вертеть как угодно, меняя ракурсы, освещение и т.д., как же это удобно подумал я тогда. С того момента я влюбился в 3d графику, предыдущие познания 2d мира, мне очень сильно помогли в 3d в дальнейшем (и не только в 3d). 
+    
+                В процессе погружения в мир 3d я увлекся анимацией, в итоге, она меня затянула гораздо больше моделирование. Так я стал учиться на 3d аниматора, снова курсы, учеба и т.д.
+                После учебы, удалось устроиться на студию 3d Sparrow которая занимается производством сериала Booba. Так я начал заниматься 3d анимацией. <br>
+                <br>
+    
+                Но все время, еще со школьных времен, меня привлекало програмирование. Тогда, как в прочем и большую часть моей жизни, я думал что это не мое, у меня плохо с математикой и все такое (а еще, скорее всего, и с Русским...), у меня не получится. Так я и думал все время. Но пару лет назад, особенно, когда на основной работе начал чаще обощаться с программистами, у меня снова возникало желание это попробовать. Я подумал, что мне уже 30 лет и если я не попробую, возможно, а скорее всего и наверняка, буду жалеть об этом потом всю жизнь. Ведь даже если и не получится, хотя бы я буду знать об этом, что да, это действительно не мое. Так я и решил попробовать себя в программировании. Но решил начать с чего-то более легкого, так я начал изучать html и css, опять же в специалисте. Да, это считается языком разметки, как я потом узнал и с этим, пожалуй, согласен. Когда более или менее стал комфортно ориентироваться в коде страниц, в том числе и чужих. Решил переходить к JavaScript, поскольку, до этого все свое время провел в графических редакторах, я выбрал направление frontend. Снова специалист, но с JavaScript оказалось не так легко, как с html и css, после этих курсов, я лишь хорошо ориентировался в синтаксисе, а где и как применять, понятия не имел. Около полугода я сам как-то пытался двигаться дальше, дело шло медленно. Однажды наткнулся на онлайн семинар по верстке от школы webcademy, семинар мне понравился, все хорошо и подробно объясняли. Я полез на сайт школы и помимо верстки, нашел там и курсы junior frontend developer. Так я стал учиться на frontend, в процессе обучения, выполнил три проект, квиз опрос, frontend для CRM на примере заявок, и SPA фильтр каталога для интернет магазина недвижимости. Были и еще выполненные проекты, но оболее мелкие. После обучения на курсе, знаний прибавилось и теперь их намного больше, а главное, теперь узнал как и где их применять. <br>
+                <br>
+    
+                В настоящий момент пытаюсь закрепить полученные знания, создав небольшой сайт с моими работами, на котором вы сейчас находитесь. До сих пор я работаю и с графикой и с 3д анимаией на фрилансе, но большую часть времени уделяю frontend. <br>
+                <br>
+    
+                Спасибо за внимание!
+    
+            </p>
+            <input type="button" value="Развернуть">
+        </div>
+    </div>
+    <!-- // Info text -->
+
+    <!-- footer -->
+    <div class="d-none d-sm-block container-xl my-footer">
+        <div class="row justify-content-between">
+            <div class="col-7">
+                <div class="row nav-menu-footer" data-nav-bar>
+                    <div class="col" data-about>
+                        <a href="">About me</a>
+                    </div>
+                    <div class="col" data-js>
+                        <a href="">JavaScript</a>
+                    </div>
+                    <div class="col" data-animation>
+                        <a href="">3d Animation</a>
+                    </div>
+                    <div class="col" data-modeling>
+                        <a href="">3d Modeling</a>
+                    </div>
+                    <div class="col" data-ps>
+                        <a href="">Photoshop</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row social-networks">
+                    <div class="col">
+                        <a href="https://vk.com/id640146">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.facebook.com/profile.php?id=100001263317483">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.instagram.com/vasiliy_romanov_88/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://vimeo.com/vasya88">
+                            <i class="fab fa-vimeo"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // footer -->
+
+    <div class="d-block d-sm-none footer_for_mobile"></div>
+    <script src="js/main.js"></script>
+</body>
+</html>
