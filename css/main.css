@@ -81,6 +81,29 @@ body {
     font-size: 0.7em;
 }
 
+/* ------------ javaScript ----------- */
+.site-preview-card {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.site-preview-card img {
+    max-width: 300px;
+    height: 160px;
+    position: relative;
+    right: 18px;
+    text-decoration: none;
+}
+
+.site-preview-card p {
+    color: #333333;
+}
+
 .active_a a {
     background-color: #333333;
     color: #e4e4e4;
